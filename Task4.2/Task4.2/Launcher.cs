@@ -8,12 +8,10 @@ namespace Task4._2
 {
     class Launcher
     {
-
         public static void Main()
         {
-               Launcher launcher = new Launcher();
+            Launcher launcher = new Launcher();
             launcher.Cases();
-                        
         }
 
         public void Cases()
@@ -42,7 +40,5 @@ namespace Task4._2
                 }
             }
         }
-
-        
-         }
+    }
 }

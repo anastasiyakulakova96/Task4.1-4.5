@@ -19,6 +19,7 @@ namespace Task4._2
                 Console.WriteLine("Please enter number again");
             }
         }
+
         public void CalculationFibonnachiNumbers()
         {
             EnterNumberForFibonnachi();
