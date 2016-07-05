@@ -1,0 +1,12 @@
+c:\users\настя\documents\visual studio 2015\Projects\Task4.2\Task4.2\bin\Debug\Task4.2.exe.config
+c:\users\настя\documents\visual studio 2015\Projects\Task4.2\Task4.2\bin\Debug\Task4.2.exe
+c:\users\настя\documents\visual studio 2015\Projects\Task4.2\Task4.2\bin\Debug\Task4.2.pdb
+c:\users\настя\documents\visual studio 2015\Projects\Task4.2\Task4.2\obj\Debug\Task4.2.csprojResolveAssemblyReference.cache
+c:\users\настя\documents\visual studio 2015\Projects\Task4.2\Task4.2\obj\Debug\Task4.2.exe
+c:\users\настя\documents\visual studio 2015\Projects\Task4.2\Task4.2\obj\Debug\Task4.2.pdb
+C:\Task4\Task4.2\Task4.2\bin\Debug\Task4.2.exe.config
+C:\Task4\Task4.2\Task4.2\obj\Debug\Task4.2.exe
+C:\Task4\Task4.2\Task4.2\obj\Debug\Task4.2.pdb
+C:\Task4\Task4.2\Task4.2\bin\Debug\Task4.2.exe
+C:\Task4\Task4.2\Task4.2\bin\Debug\Task4.2.pdb
+C:\Task4\Task4.2\Task4.2\obj\Debug\Task4.2.csprojResolveAssemblyReference.cache
