@@ -11,7 +11,16 @@ namespace Task4._2
 
         public static void Main()
         {
-            Launcher launcher = new Launcher();
+               Launcher launcher = new Launcher();
+            launcher.Cases();
+                        
+        }
+
+        public void Cases()
+        {
+            Factorial factorial = new Factorial();
+            Fibonnachi fibonnachi = new Fibonnachi();
+
             string switchCase = "";
 
             while (!switchCase.Equals("3"))
@@ -22,10 +31,10 @@ namespace Task4._2
                 switch (switchCase)
                 {
                     case "1":
-                        launcher.CalculationFibonnachiNumbers();
+                        fibonnachi.CalculationFibonnachiNumbers();
                         break;
                     case "2":
-                        launcher.CalculationFactorial();
+                        factorial.CalculationFactorial();
                         break;
                     default:
                         Console.WriteLine("You enter don't 1 or 2");
@@ -34,41 +43,6 @@ namespace Task4._2
             }
         }
 
-        public void CalculationFactorial()
-        {
-            Console.WriteLine("\n Please,enter number to factirial");
-
-            long x;
-            while (!Int64.TryParse(Console.ReadLine(), out x))
-            {
-                Console.WriteLine("Please enter number again");
-            }
-
-            long result = 1;
-            for (long i = 1; i <= x; i++)
-            {
-                result *= i;
-            }
-            Console.WriteLine("FACTORIAL= " + result + "\n");
-        }
-
-
-        public void CalculationFibonnachiNumbers()
-        {
-            Console.Write("Введите конец диапазона от 1 до : ");
-            long end;
-            while (!Int64.TryParse(Console.ReadLine(), out end))
-            {
-                Console.WriteLine("Please enter number again");
-            }
-
-            long j = 1;
-            for (long i = 1; i <= end; i += j)
-            {
-                Console.Write("{0} ", i);
-                j = i - j;
-            }
-            Console.WriteLine("\n");
-        }
-    }
+        
+         }
 }

@@ -10,3 +10,9 @@ C:\Task4\Task4.2\Task4.2\obj\Debug\Task4.2.pdb
 C:\Task4\Task4.2\Task4.2\bin\Debug\Task4.2.exe
 C:\Task4\Task4.2\Task4.2\bin\Debug\Task4.2.pdb
 C:\Task4\Task4.2\Task4.2\obj\Debug\Task4.2.csprojResolveAssemblyReference.cache
+C:\Task4.1-4.5\Task4.2\Task4.2\bin\Debug\Task4.2.exe.config
+C:\Task4.1-4.5\Task4.2\Task4.2\obj\Debug\Task4.2.exe
+C:\Task4.1-4.5\Task4.2\Task4.2\obj\Debug\Task4.2.pdb
+C:\Task4.1-4.5\Task4.2\Task4.2\obj\Debug\Task4.2.csprojResolveAssemblyReference.cache
+C:\Task4.1-4.5\Task4.2\Task4.2\bin\Debug\Task4.2.exe
+C:\Task4.1-4.5\Task4.2\Task4.2\bin\Debug\Task4.2.pdb
