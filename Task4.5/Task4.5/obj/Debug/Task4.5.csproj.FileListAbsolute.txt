@@ -1,0 +1,11 @@
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\bin\Debug\Task4.5.exe.config
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\bin\Debug\Task4.5.exe
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\bin\Debug\Task4.5.pdb
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\obj\Debug\Task4.5.csprojResolveAssemblyReference.cache
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\obj\Debug\Task4.5.exe
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\obj\Debug\Task4.5.pdb
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\obj\Debug\Task4._5.Data.resources
+c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.5\Task4.5\obj\Debug\Task4.5.csproj.GenerateResource.Cache
+C:\Task4\Task4.5\Task4.5\bin\Debug\Task4.5.exe.config
+C:\Task4\Task4.5\Task4.5\obj\Debug\Task4.5.exe
+C:\Task4\Task4.5\Task4.5\obj\Debug\Task4.5.pdb
