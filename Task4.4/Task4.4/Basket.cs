@@ -16,10 +16,11 @@ namespace Task4._4
         {
             int productId = 0;
             int count = 0;
-            
-            while (productId != -1)
+
+            string key = ""; 
+            while (!key.Equals("no"))
             {
-                Console.WriteLine("Enter ID number, what you want add in basket.If you want to exit enter '-1' ");
+                Console.WriteLine("Enter ID number, what you want add in basket:");
 
                 while (!Int32.TryParse(Console.ReadLine(), out productId))
                 {
@@ -43,6 +44,9 @@ namespace Task4._4
                         basket.Add(s);
                     }
                 }
+
+                Console.WriteLine("Do you want to continue (yes/no):");
+                key = Console.ReadLine();
             }
             return basket;
         }

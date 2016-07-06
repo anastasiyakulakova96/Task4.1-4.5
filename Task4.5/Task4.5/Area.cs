@@ -8,135 +8,126 @@ namespace Task4._5
 {
     class Area
     {
-        public int W =Int32.Parse(Data.W);
-        public int L = Int32.Parse(Data.L);
+        public int widthSurface =Int32.Parse(Data.W);
+        public int lenghtSurface = Int32.Parse(Data.L);
         public int surfaceArea;
-        public int w = 0;
-        public int l = 0;
-        public int result=0;
-        public int result1=0;
+        public int widthInput = 0;
+        public int lenghtInput = 0;
+        public int numberOfRectanglesHorizontally = 0;
+        public int numberOfRectanglesVertically= 0;
         int countRectangles = 0;
         int restLenght = 0;
         int restWidth = 0;
-        int tempcountRectangles;
+        int tempCountRectangles;
 
         public void InputSidesOfRectangle()
         {
             Console.WriteLine("Please enter width of rectangle");
-            while (!Int32.TryParse(Console.ReadLine(), out w))
+            while (!Int32.TryParse(Console.ReadLine(), out widthInput))
             {
                 Console.WriteLine("Please enter width side again ");
             }
 
             Console.WriteLine("Please enter lenght  of rectangle");
-            while (!Int32.TryParse(Console.ReadLine(), out l))
+            while (!Int32.TryParse(Console.ReadLine(), out lenghtInput))
             {
                 Console.WriteLine("Please enter lenght side again ");
             }
 
         }
 
-        public int CalculateArea(int L, int W)
+        public int CalculateArea(int lenghtSurface, int widthSurface)
         {
-            return L * W;
+            return lenghtSurface * widthSurface;
         }
 
         public void PrintArea()
         {
-            surfaceArea = CalculateArea(L, W);
-            Console.WriteLine("Surface Area= " + surfaceArea + "\n width " + W + "\n lenght " + L);
+            surfaceArea = CalculateArea(lenghtSurface, widthSurface);
+            Console.WriteLine("Surface Area= " + surfaceArea + "\n width " + widthSurface + "\n lenght " + lenghtSurface);
         }
 
-        public bool CheeckSidesOfRectangle(int L, int W, int l, int w)
+        public bool CheckSidesOfRectangle(int lenghtSurface, int widthSurface, int lenghtInput, int widthInput)
         {
-            if (L >= l && W >= w)
+            if (lenghtSurface >= lenghtInput && widthSurface >= widthInput)
             {
                 return true;
             }
             return false;
         }
 
-        public int CheeckCountRectangle(int W, int L, int w, int l)
+        public int CheckCountRectangle(int widthSurface, int lenghtSurface, int widthInput, int lenghtInput)
         {
-            int countOfWidth = W / w;
-            int countOfLenght = L / l;
-            int occupiedLength = l * countOfLenght;
-            int occupationWidth = w * countOfWidth;
+            int countOfWidth = widthSurface / widthInput;
+            int countOfLenght = lenghtSurface / lenghtInput;
+            int occupiedLength = lenghtInput * countOfLenght;
+            int occupationWidth = widthInput * countOfWidth;
             int occupiedArea = CalculateArea(occupationWidth, occupiedLength); //занятая площадь
-            int areaOneSide = CalculateArea(w, l); // одного прямоугольника
-            restLenght = L - occupiedLength;
-            restWidth = W - occupationWidth;
+            int areaOneSide = CalculateArea(widthInput, lenghtInput); // одного прямоугольника
+            restLenght = lenghtSurface - occupiedLength;
+            restWidth = widthSurface - occupationWidth;
 
-            tempcountRectangles = occupiedArea / areaOneSide;
+            tempCountRectangles = occupiedArea / areaOneSide;
 
-            return tempcountRectangles;
+            return tempCountRectangles;
         }
 
-        public bool HorizontCalculateCaunt()
+        public bool HorizontalCalculateCount()
         {
           
-            if (CheeckSidesOfRectangle(L, W, l, w))
+            if (CheckSidesOfRectangle(lenghtSurface, widthSurface, lenghtInput, widthInput)) 
             {
-                result = CheeckCountRectangle(W, L, w, l);
+                numberOfRectanglesHorizontally = CheckCountRectangle(widthSurface, lenghtSurface, widthInput, lenghtInput);
 
-                if ((restLenght > 0 || restWidth > 0) && (CheeckSidesOfRectangle(restLenght, W, w, l)))
+                if ((restLenght > 0 || restWidth > 0) && (CheckSidesOfRectangle(restLenght, widthSurface, widthInput, lenghtInput)))
                 {
-                    int temp = 0;
-                    temp = w;
-                    w = l;
-                    l = temp;
+                    int temp =widthInput;
+                    widthInput = lenghtInput;
+                    lenghtInput = temp;
 
-                    countRectangles = CheeckCountRectangle(W, restLenght, w, l);
-                    result += countRectangles;
+                    countRectangles = CheckCountRectangle(widthSurface, restLenght, widthInput, lenghtInput);
+                    numberOfRectanglesHorizontally += countRectangles;
                 }
                 return true;
-            }
-            else
-            {
-                Console.WriteLine("None of the rectangle does not fit in a given area");
-               return false;
             }
             return false;
+           
         }
 
-        public bool VerticalCalculateCaunt()
+        public bool VerticalCalculateCount()
         {
-            int temp = 0;
-            temp = w;
-            w = l;
-            l = temp;
+            int temp = widthInput;
+            widthInput = lenghtInput;
+            lenghtInput = temp;
 
-            if (CheeckSidesOfRectangle(L, W, l, w))
+            if (CheckSidesOfRectangle(lenghtSurface, widthSurface, lenghtInput, widthInput))
             {
-                result1 = CheeckCountRectangle(W, L, w, l);
-                if ((restLenght > 0 || restWidth > 0) && (CheeckSidesOfRectangle(restLenght, W, w, l)))
+                numberOfRectanglesVertically = CheckCountRectangle(widthSurface, lenghtSurface, widthInput, lenghtInput);
+                if ((restLenght > 0 || restWidth > 0) && (CheckSidesOfRectangle(restLenght, widthSurface, widthInput, lenghtInput)))
                 {
-                    temp = 0;
-                    temp = w;
-                    w = l;
-                    l = temp;
+                    temp = widthInput;
+                    widthInput = lenghtInput;
+                    lenghtInput = temp;
 
-                    countRectangles = CheeckCountRectangle(W, restLenght, w, l);
-                    result1 += countRectangles;
+                    countRectangles = CheckCountRectangle(widthSurface, restLenght, widthInput, lenghtInput);
+                    numberOfRectanglesVertically += countRectangles; 
                 }
                 return true;
             }
-            else
-            {
-                Console.WriteLine("None of the rectangle does not fit in a given area");
-                return false;
-            }
-           
-            
+            return false;
         }
 
         public void ShowResult()
         {
-            if (HorizontCalculateCaunt() || VerticalCalculateCaunt())
+            if (HorizontalCalculateCount() || VerticalCalculateCount()) 
             {
-                HorizontCalculateCaunt();
-                VerticalCalculateCaunt();
-               Console.WriteLine("Count of triangles: " + Math.Max(result,result1));
+                HorizontalCalculateCount();
+                VerticalCalculateCount();
+               Console.WriteLine("Count of rectangles: " + Math.Max(numberOfRectanglesHorizontally, numberOfRectanglesVertically)); 
+            }
+            else
+            {
+                Console.WriteLine("None of the rectangle does not fit in a given area");
             }
         }
     }
